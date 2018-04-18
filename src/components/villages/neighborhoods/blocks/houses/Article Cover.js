@@ -6,7 +6,7 @@ class ArticleCover extends React.Component{
   render() {
     return (
       <Col lg={6}>
-        <img className="ArticleCover" src="./images/ArticleCover.svg"/>
+        <img className="article-cover" src="/images/ArticleCover.svg"/>
       </Col>
     );
   }

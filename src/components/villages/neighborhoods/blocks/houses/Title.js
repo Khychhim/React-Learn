@@ -11,4 +11,4 @@ class Title extends React.Component{
     );
   }
 }
-export default ArticleCover;
+export default Title;

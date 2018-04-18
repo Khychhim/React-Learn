@@ -6,9 +6,9 @@ class Laptop extends React.Component{
   render() {
     return (
       <Col lg={6}>
-        <img className="laptop" src="./images/Laptop.png"/>
+        <img className="laptop" src="/images/Laptop.svg"></img>
       </Col>
     );
   }
 }
-export default ArticleCover;
+export default Laptop;

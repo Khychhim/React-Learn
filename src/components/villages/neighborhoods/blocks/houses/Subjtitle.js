@@ -11,4 +11,4 @@ class Subtitle extends React.Component{
     );
   }
 }
-export default ArticleCover;
+export default Subtitle;

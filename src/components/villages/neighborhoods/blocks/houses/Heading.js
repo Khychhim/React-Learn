@@ -7,10 +7,10 @@ class Heading extends React.Component{
     return (
       <div>
         <h2 className="heading">
-          DevBot analyze popular articles
+          {this.props.heading}
         </h2>
       </div>
     );
   }
 }
-export default ArticleCover;
+export default Heading;

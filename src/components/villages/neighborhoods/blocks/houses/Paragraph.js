@@ -14,4 +14,4 @@ class Paragraph extends React.Component{
     );
   }
 }
-export default ArticleCover;
+export default Paragraph;

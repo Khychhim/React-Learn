@@ -15,4 +15,4 @@ class DemoLink extends React.Component{
     );
   }
 }
-export default ArticleCover;
+export default DemoLink;

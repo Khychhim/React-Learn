@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Container, Row, Col} from 'react-grid-system';
+import ArticleCover from './blocks/houses/Article Cover';
+import SectionDescription from './blocks/Section Description';
 
 class SectionB extends React.Component{
   render() {
@@ -9,11 +11,11 @@ class SectionB extends React.Component{
         <Container>
           <Row>
             <ArticleCover/>
-            <SectionDescription/>
+            <SectionDescription heading="DevBot sends the perfect article"/>
           </Row>
         </Container>
       </section>
     );
   }
 }
-export default ArticleCover;
+export default SectionB;

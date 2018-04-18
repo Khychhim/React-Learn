@@ -6,9 +6,9 @@ class SlackChannel extends React.Component{
   render() {
     return (
       <Col lg={12}>
-        <img className="slack-channel" src="./images/SlackChannel.jpg"/>
+        <img className="slack-channel" src="./images/SlackChannel.svg"/>
       </Col>
     );
   }
 }
-export default ArticleCover;
+export default SlackChannel;

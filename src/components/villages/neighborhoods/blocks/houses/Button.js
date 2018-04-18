@@ -11,4 +11,4 @@ class Button extends React.Component{
     );
   }
 }
-export default ArticleCover;
+export default Button;
