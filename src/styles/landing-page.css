@@ -13,8 +13,8 @@ body {
 }
 
 .branding {
-  position: absolute;
-  left: 0;
+  position: sticky;
+  left: 0px;
   width: 20%;
 }
 

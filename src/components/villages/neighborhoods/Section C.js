@@ -9,7 +9,7 @@ class SectionC extends React.Component{
       <section className="section-c">
         <Container>
           <Row>
-            <CallToAction/>
+            <CallToAction title="Developer Bot for Slack" subtitle="One article to one random person in your Slack group. Once a day"/>
           </Row>
         </Container>
       </section>
