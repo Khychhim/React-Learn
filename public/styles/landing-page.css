@@ -13,7 +13,6 @@ body {
 }
 
 .branding {
-  position: absolute;
   left: 0;
   width: 20%;
   cursor: pointer;
