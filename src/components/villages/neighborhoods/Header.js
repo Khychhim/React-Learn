@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Container, Row, Col} from 'react-grid-system';
 import Navigation from './blocks/Navigation';
 import CallToAction from './blocks/Call To Action';
-import SlackChannel from './blocks/houses/Slack Channel';
+import SlackChannel from './blocks/Slack Channel';
 
 class Header extends React.Component {
   render() {
