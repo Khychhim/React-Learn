@@ -8,7 +8,7 @@ const bot = database.ref('bot');
 class ChatBoxMessage extends React.Component{
   constructor(){
     super();
-    this.state = {avatar: "", username: "", message: ""};
+    this.state = {avatar: "", username: "", message: "", showComponent: false};
   }
 
   componentDidMount(){
@@ -55,18 +55,27 @@ class ChatBoxMessage extends React.Component{
       });
     });
 
+    setTimeout(() =>{
+      this.setState({showComponent: true});
+    },1500);
   }
 
   render() {
+    const showComponent = this.state.showComponent;
     return (
-      <div className="bot-message">
-        <div style={{background: this.state.avatar}} className="bot-avatar">
-        </div>
-        <div className="username">{this.state.username}</div>
-        <div className="message">{this.state.message}</div>
-        <a href={this.state.article}>
-          <span className="article">{this.state.article}</span>
-        </a>
+      <div>
+        {showComponent ? (
+          <div className="bot-message">
+            <div style={{background: this.state.avatar}} className="bot-avatar">
+            </div>
+            <div className="username">{this.state.username}</div>
+            <div className="message">{this.state.message}</div>
+            <a href={this.state.article}>
+              <span className="article">{this.state.article}</span>
+            </a>
+          </div>
+        ) : (<div></div>)
+        }
       </div>
     );
   }

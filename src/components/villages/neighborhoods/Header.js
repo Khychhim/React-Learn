@@ -17,7 +17,7 @@ class Header extends React.Component {
             <CallToAction title={this.props.title} subtitle={this.props.subtitle}/>
           </Row>
           <Row>
-            <SlackChannel/>
+            <SlackChannel messages={this.props.messages}/>
           </Row>
         </Container>
       </section>

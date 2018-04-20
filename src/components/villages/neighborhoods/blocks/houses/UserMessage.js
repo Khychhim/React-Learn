@@ -18,7 +18,7 @@ const user = database.ref('user');
 class UserMessage extends React.Component{
   constructor(){
     super();
-    this.state = {avatar: "", username: "", message: ""};
+    this.state = {avatar: "", username: "", message: "", showComponent: false};
   }
 
   componentDidMount(){
@@ -55,16 +55,24 @@ class UserMessage extends React.Component{
       });
     });
 
+    setTimeout(() =>{
+      this.setState({showComponent: true});
+    },3000);
+
   }
 
   render() {
+    const showComponent = this.state.showComponent;
     return (
+      <div>
+        {showComponent ? (
       <div className="user-message">
-        <div style={{background: this.state.avatar}} className="user-avatar">
-        </div>
+        <div style={{background: this.state.avatar}} className="user-avatar"></div>
         <div className="username">{this.state.username}</div>
         <div className="message">{this.state.message}</div>
-      </div>
+      </div>) : (<div></div>)
+      }
+    </div>
     );
   }
 }
